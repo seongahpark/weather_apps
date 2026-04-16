@@ -1,0 +1,13 @@
+[project]
+name = "weather-apps"
+version = "0.1.0"
+description = "날씨 및 LLM 기반 맞춤형 라이프스타일 추천 앱 (Streamlit)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "streamlit",
+    "requests",
+    "python-dotenv",
+    "openai",
+]
+

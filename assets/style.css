@@ -1,0 +1,62 @@
+.rec-card {
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 0.8rem;
+    position: relative; /* For absolute positioning of copy button */
+    height: 100%; /* Make content height identical */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rec-card h4 { margin-top: 0; color: #e2e8f0; }
+.umbrella-alert {
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.no-umbrella-alert {
+    background: linear-gradient(90deg, #10b981, #059669);
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.dest-col { padding: 0.2rem 0; }
+div[data-testid="stTabs"] button { font-size: 0.95rem; }
+
+/* Copy Button Styling */
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+    line-height: 1;
+}
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    transform: scale(1.1);
+}
+
+/* Fix search bar alignment and button style */
+div.stButton > button {
+    width: 100% !important;
+    white-space: nowrap !important;
+    margin-top: 0px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
